@@ -6,7 +6,7 @@ function reverseMethod(str) {
   }
   return reverse;
 }
-console.log(reverseMethod("hello")); 
+document.write("Reversed String: " + reverseMethod("hello") + "<br/>");
 
 // 2. Find the second largest number in an array
 function secondLarges(arr) {
@@ -21,13 +21,13 @@ function secondLarges(arr) {
   }
   return second;
 }
-console.log(secondLarges([10, 20, 4, 45, 99])); 
+document.write("Second Largest Number: " + secondLarges([10, 20, 4, 45, 99]) + "<br/>");
 
 // 3. Remove duplicate values from an array
 function removeDuplicate(arr) {
   return [...new Set(arr)];
 }
-console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5])); 
+document.write("Array without Duplicates: " + removeDuplicate([1, 2, 2, 3, 4, 4, 5]) + "<br/>");
 
 // 4. Function that supports infinite currying
 function currySum(a) {
@@ -39,5 +39,4 @@ function currySum(a) {
       }
   };
 }
-console.log(currySum(1)(2)(3)(4)()); 
-console.log(currySum(5)(10)(15)());
+document.write("Curry Sum Results: " + currySum(1)(2)(3)(4)() + ", " + currySum(5)(10)(15)() + "<br/>");
